@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te amo Sam</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #f7cde2; /* rosa pastel */
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.3em;
+      margin: 20px 0;
+      color: #333;
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Te amo Sam</h1>
+  <p>Desde que te conocí, tu fuiste mi todo, eres la razón por la cual despierto y sueño, amo todo de ti... adoro todo de ti, y se que no es suficiente decirlo porque mereces demasiadas cosas, eres la mejor persona que pude haber conocido y la mejor pareja que he tenido en toda mi vida, eres unica e inigualable.
+</p>
+  <img src="https://i.pinimg.com/736x/94/2b/e5/942be5cac9689ba527b2c217aacb5dbe.jpg" alt="Imagen central">
+  <p>Te amo más que a nada, más que al aire que respiro, más que a todas las palabras que pudiera escribir.Gracias por ser tú. Por existir. Por elegirme cada día. Porque desde que estás conmigo, la vida tiene sabor, color, propósito. Porque tú, Samantha, eres la razón por la que sonrío sin motivo y por la que quiero escribir cientos de páginas solo para intentar decirte cuánto te amo.
+Y aunque nunca me alcancen las palabras, quiero que lo sepas: te amo con todo lo que soy. Más que a nada en este mundo. Y siempre, mientras tenga aliento, seguiré amándote.
+. 💕</p>
+  <img src="https://i.pinimg.com/1200x/86/11/26/861126696fd72d77dcc5389bd20257a7.jpg" alt="Imagen final">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Amor 💖</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #f7cde2;
+      border: none;
+      color: #fff;
+      font-size: 1em;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e6b8cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Te amo Sam 💕</h1>
+  <img id="foto" src="URL_IMAGEN_1" alt="Foto especial">
+  <br>
+  <button onclick="cambiarFoto()">Cambiar imagen</button>
+
+  <script>
+    const imagenes = [
+      "https://i.pinimg.com/1200x/7a/a6/71/7aa6712a188ffe530b6004724e2aaf9b.jpg",
+      "https://i.pinimg.com/736x/bf/85/ad/bf85ad07750553bbc2dd0df12610fbdc.jpg",
+      "https://i.pinimg.com/736x/99/e2/87/99e2870ba50673f46b67df1d3dd47a8e.jpg"
+    ];
+    let indice = 0;
+
+    function cambiarFoto() {
+      indice = (indice + 1) % imagenes.length;
+      document.getElementById("foto").src = imagenes[indice];
+    }
+  </script>
+
+</body>
+</html>
